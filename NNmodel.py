@@ -145,7 +145,8 @@ def main():
     fit = False
     train_x, train_y, test_x, test_y = prep_data()
     classifier = network_compile(train_x, train_y, fit=fit)
-    classifier.load_weights("pickles/Network_Trained.h5")
+    if fit==False:
+        classifier.load_weights("pickles/Network_Trained.h5")
     evluate_and_confusion_matrix(classifier, test_x, test_y)
 
 
