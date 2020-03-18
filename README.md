@@ -1,3 +1,9 @@
+Trying to predict whether a book will become a movie or not!
 
-Running the NNModel.py will result in excuting the evluation over the test feature vectors , while loading a pre trained model.
-If we change the fit boolean to true in the main function , the Network will start fitting herself to the data , which should take 15 mints.
+Data-
+Extracted 30k goodreads book using api-wrapper in python of them.
+The tagged of whehter the book is a movie or not is based on user lists.
+
+Using various features from the Data like popularity , distrubtion of votes , author , publisher and some NLP tools on the book discreptions.
+
+Feeded the feature vector into a 15-layer NN and reached 97.3% accuracy on 300 books dataset
